@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern College Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<style>
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: black;
+    background: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Updated Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007BFF;
+    padding: 10px;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left:auto;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007BFF;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url("https://i.ibb.co/xSj94qwX/IMG-20250328-WA0012.jpg");
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+}
+.hero a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Course & Faculty Cards */
+.course-container, .faculty-container {
+  
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-card, .faculty-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.course-card:hover, .faculty-card:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery-container img {
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background: #333;
+}
+</style>
+<body>
+
+    <!-- College Name -->
+    <nav class="nav">
+        University Institution of Technology RGPV
+    </nav>
+
+    <!-- Updated Navigation Bar -->
+    <nav class="navbar">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#gallery">Events</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="darkModeToggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Our College</h1>
+        <p>Empowering students for a brighter future</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </section>
+  
+    <section id="courses" >
+       
+        <p>UIT-RGPV, Bhopal is a community of teachers, staff & students, who are dedicated to the achievement of a shared vision of excellence. The community believes in renewing and transferring knowledge & skills and the development of positive & purposeful attitudes and values. Being in the campus of the State Technological University, the UIT-RGPV is in a position to offer excellent and high quality academic services to the students.
+
+            The Institution is situated in Bhopal, a city well known for its natural beauty & lakes. The city is well connected to the other parts of the country, by air, rail, and road. The large number of industries situated in and around Bhopal, provide excellent training opportunities to the students and staff.</p>
+        
+    </section>
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="gallery-container">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/99XcCYBR/1538997805phpj32-Ga-B.jpg" alt="1538997805phpj32-Ga-B" border="0"></a>
+            <a href="https://ibb.co/sdDdrL0S"><img src="https://i.ibb.co/pBsBpCtD/DSC6694-1-1024x683.webp" alt="DSC6694-1-1024x683" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/qLGyQcxh/images-4.jpg" alt="images-4" border="0"></a>
+        </div>
+       
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty">
+        <h2>Our Faculty</h2>
+        <div class="faculty-container">
+            <div class="faculty-card">Dr. Smith </div>
+            <div class="faculty-card">Prof. Jane </div>
+            <div class="faculty-card">Dr. Alex </div>
+        </div>
+    </section>
+
+    <!-- Event Gallery Section -->
+    <section id="gallery">
+        <h2>Event Gallery</h2>
+        <div class="gallery-container">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/FCgVdLH/sport-complex11.jpg" alt="sport-complex11" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/WpNk12Bp/istockphoto-1354761874-612x612.jpg" alt="istockphoto-1354761874-612x612" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/DgPC1q59/images-3.jpg" alt="images-3" border="0"></a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">"Best college ever!" - John</div>
+            <div class="testimonial-card">"Amazing faculty and facilities!" - Sarah</div>
+        </div>
+    </section>
+
+    <!-- Student Registration Form -->
+    <section id="register">
+        <h2>Register as a Student</h2>
+        <form id="registerForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Course" required><br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@college.com</p>
+        <p>Phone: +1234567890</p>
+       </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 College Name. All rights reserved.</p>
+    </footer>
+    <script>
+        // Dark Mode Toggle
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Hamburger Menu Toggle
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('show');
+        });
+    
+    
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Open Image Lightbox
+function openLightbox(imageSrc) {
+    const lightbox = document.createElement("div");
+    lightbox.id = "lightbox";
+    lightbox.innerHTML = `<img src="${imageSrc}" style="max-width:100%;border-radius:10px;">`;
+    lightbox.onclick = () => document.body.removeChild(lightbox);
+    document.body.appendChild(lightbox);
+}
+
+// Form Submission Alert
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Registration Successful!");
+});
+    </script>
+</body>
+  </html>
