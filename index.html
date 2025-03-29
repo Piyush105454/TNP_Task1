@@ -44,35 +44,65 @@
         
     </section>
     <!-- Courses Section -->
-    <section id="courses">
-        <h2>Our Courses</h2>
-        <div class="gallery-container">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/99XcCYBR/1538997805phpj32-Ga-B.jpg" alt="1538997805phpj32-Ga-B" border="0"></a>
-            <a href="https://ibb.co/sdDdrL0S"><img src="https://i.ibb.co/pBsBpCtD/DSC6694-1-1024x683.webp" alt="DSC6694-1-1024x683" border="0"></a>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/qLGyQcxh/images-4.jpg" alt="images-4" border="0"></a>
-        </div>
-       
-    </section>
+    <div class="gallery-container">
+    <div class="course-item">
+        <a href="https://imgbb.com/">
+            <img src="https://i.ibb.co/99XcCYBR/1538997805phpj32-Ga-B.jpg" alt="1538997805phpj32-Ga-B" border="0">
+        </a>
+        <p>Computer Science Engineering</p>
+    </div>
+    
+    <div class="course-item">
+        <a href="https://ibb.co/sdDdrL0S">
+            <img src="https://i.ibb.co/pBsBpCtD/DSC6694-1-1024x683.webp" alt="DSC6694-1-1024x683" border="0">
+        </a>
+        <p>Electronics & Communication</p>
+    </div>
+    
+    <div class="course-item">
+        <a href="https://imgbb.com/">
+            <img src="https://i.ibb.co/qLGyQcxh/images-4.jpg" alt="images-4" border="0">
+        </a>
+        <p>Mechanical Engineering</p>
+    </div>
+</div>
 
     <!-- Faculty Section -->
     <section id="faculty">
         <h2>Our Faculty</h2>
         <div class="faculty-container">
-            <div class="faculty-card">Dr. Smith </div>
-            <div class="faculty-card">Prof. Jane </div>
-            <div class="faculty-card">Dr. Alex </div>
+            <div class="faculty-card">DR SANJAY SILAKARI</div>
+            <div class="faculty-card">DR SC CHOUBE </div>
+            <div class="faculty-card">DR. ALKA AGRAWAL</div>
         </div>
     </section>
 
     <!-- Event Gallery Section -->
     <section id="gallery">
-        <h2>Event Gallery</h2>
-        <div class="gallery-container">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/FCgVdLH/sport-complex11.jpg" alt="sport-complex11" border="0"></a>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/WpNk12Bp/istockphoto-1354761874-612x612.jpg" alt="istockphoto-1354761874-612x612" border="0"></a>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/DgPC1q59/images-3.jpg" alt="images-3" border="0"></a>
+    <h2>Event Gallery</h2>
+    <div class="gallery-container">
+        <div class="event-item">
+            <a href="https://imgbb.com/">
+                <img src="https://i.ibb.co/FCgVdLH/sport-complex11.jpg" alt="sport-complex11" border="0">
+            </a>
+            <p>Sports Complex Event</p>
         </div>
-    </section>
+
+        <div class="event-item">
+            <a href="https://imgbb.com/">
+                <img src="https://i.ibb.co/WpNk12Bp/istockphoto-1354761874-612x612.jpg" alt="istockphoto-1354761874-612x612" border="0">
+            </a>
+            <p>Cultural Fest</p>
+        </div>
+
+        <div class="event-item">
+            <a href="https://imgbb.com/">
+                <img src="https://i.ibb.co/DgPC1q59/images-3.jpg" alt="images-3" border="0">
+            </a>
+            <p>Annual Convocation</p>
+        </div>
+    </div>
+</section>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
@@ -106,7 +136,7 @@
         <p>&copy; 2025 College Name. All rights reserved.</p>
     </footer>
     <script>
-      // Dark Mode Toggle
+        // Dark Mode Toggle
         document.getElementById('darkModeToggle').addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
         });
@@ -141,7 +171,6 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Registration Successful!");
 });
-        
     </script>
 </body>
-  </html>
+</html>
