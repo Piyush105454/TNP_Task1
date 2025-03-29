@@ -1,3 +1,117 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: black;
+    background: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Updated Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007BFF;
+    padding: 10px;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left:auto;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007BFF;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url("https://i.ibb.co/xSj94qwX/IMG-20250328-WA0012.jpg");
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+}
+.hero a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Course & Faculty Cards */
+.course-container, .faculty-container {
+  
+    display: flex;
     justify-content: center;
     gap: 20px;
 }
