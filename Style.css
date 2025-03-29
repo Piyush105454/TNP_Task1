@@ -133,7 +133,46 @@ section {
     border-radius: 10px;
     cursor: pointer;
 }
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.course-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.course-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.event-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.event-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
 /* Dark Mode */
 .dark-mode {
     background: #121212;
